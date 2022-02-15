@@ -133,7 +133,7 @@ cfg['workers']               = 1
 """
 Whether to use the proposed modifid UNet or the original UNet
 """
-cfg['modified_unet']         = True 
+cfg['modified_unet']         = False 
 
 
 

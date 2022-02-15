@@ -49,8 +49,6 @@ cd $SLURM_TMPDIR
 cd src
 
 python prepare_data.py
-python train.py
-python predict.py
 
 
 echo "-----------------------------------<End of run the program>---------------------------------"
