@@ -46,7 +46,7 @@ echo "--------------------------------------------------------------------------
 echo "---------------------------------------<Run the program>------------------------------------"
 date +"%T"
 cd $SLURM_TMPDIR
-cd Brain-Tumor-Segmentation
+cd src
 
 python prepare_data.py
 python train.py
@@ -59,5 +59,10 @@ echo "--------------------------------------<backup the result>-----------------
 date +"%T"
 cd $SLURM_TMPDIR
 
-cp -r $SLURM_TMPDIR/Brain-Tumor-Segmentation ~/scratch/
+rm -r BRATS2020
+
+mkdir ~/scratch/Brain-Tumor-Segmentation/runs/train1
+
+
+cp -r $SLURM_TMPDIR ~/scratch/Brain-Tumor-Segmentation/runs/train1
 
