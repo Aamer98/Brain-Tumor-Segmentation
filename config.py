@@ -25,7 +25,7 @@ The path to all brain volumes (ex: suppose we have a folder 'MICCAI_BraTS_2019_D
 that contains two HGG and LGG folders so:
 data_dir='./MICCAI_BraTS_2019_Data_Training/*/*')
 """
-cfg['data_dir']              = '/path/to/data/'
+cfg['data_dir']              = './BRATS2020/MICCAI_BraTS2020_TrainingData/*/*/'
 
 
 
